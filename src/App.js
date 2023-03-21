@@ -5,13 +5,14 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
+import Users from "./user/pages/Users";
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route path="/" exact>
-          <h1>User Page</h1>
+          <Users />
         </Route>
         <Route path="/places/new" exact>
           <h1>New Place Page</h1>
